@@ -1,0 +1,368 @@
+[
+      {
+        "abbr": "CZ",
+        "name": "Czech",
+        "sentence": "Kdo ukradl mého jednorožce?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/cz.png",
+        "language_code": "cs-CZ",
+        "latitude": 49.7391484, 
+        "longitude": 15.3344745
+      },
+      {
+        "abbr": "SK",
+        "name": "Slovak",
+        "sentence": "Kto ukradol môjho jednorožca?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/sk.png",
+        "language_code": "sk-SK",
+        "latitude": 48.7065658, 
+        "longitude": 19.487012
+      },
+      {
+        "abbr": "GB",
+        "name": "English",
+        "sentence": "Who stole my unicorn?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/gb.png",
+        "language_code": "en-GB",
+        "latitude": 54.2605819, 
+        "longitude": -1.9790574
+      },
+      {
+        "abbr": "DE",
+        "name": "German",
+        "sentence": "Wer hat mein Einhorn gestohlen?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/de.png",
+        "language_code": "de-DE",
+        "latitude": 50.6275416, 
+        "longitude": 9.9584503
+      },
+      {
+        "abbr": "SE",
+        "name": "Swedish",
+        "sentence": "Vem stol min enhörning?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/se.png",
+        "language_code": "sv-SE",
+        "latitude": 62.7363138, 
+        "longitude": 15.3654696
+      },
+      {
+        "abbr": "FI",
+        "name": "Finnish",
+        "sentence": "Kuka varasti yksisarviseni?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/fi.png",
+        "language_code": "fi-FI",
+        "latitude": 64.010864, 
+        "longitude": 26.6276602
+      },
+      {
+        "abbr": "NL",
+        "name": "Dutch",
+        "sentence": "Wie heeft mijn eenhoorn gestolen?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/nl.png",
+        "language_code": "nl-NL",
+        "latitude": 52.7307741, 
+        "longitude": 5.8352036
+      },
+      {
+        "abbr": "TW",
+        "name": "Chinese (Traditional)",
+        "sentence": "誰偷盗我的獨角獸",
+        "phonetic": "Shuí tōudào wǒ de dú jiǎo shòu?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/tw.png",
+        "language_code": "zh-TW",
+        "latitude": 23.7520542, 
+        "longitude": 120.9273183
+      },
+      {
+        "abbr": "ES",
+        "name": "Spanish",
+        "sentence": "¿Quién robó mi unicornio?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/es.png",
+        "language_code": "es-ES",
+        "latitude": 41.27, 
+        "longitude": -3.21
+      },
+      {
+        "abbr": "FR",
+        "name": "French",
+        "sentence": "Qui a volé ma l'unicorne?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/fr.png",
+        "language_code": "fr-FR",
+        "latitude": 46.6487132, 
+        "longitude": 2.6215658
+      },
+      {
+        "abbr": "RU",
+        "name": "Russian",
+        "sentence": "Кто украл моего единорога?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/ru.png",
+        "language_code": "ru-RU",
+        "latitude": 61.9874292, 
+        "longitude": 96.7148551
+      },
+      {
+        "abbr": "PH",
+        "name": "Philippines",
+        "sentence": "Sino ang nagnakaww nang aking kabayong meysungay?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/ph.png",
+        "latitude": 12.4155121, 
+        "longitude": 123.4310376
+      },
+      {
+        "abbr": "HU",
+        "name": "Hungarian",
+        "sentence": "Ki lopta el az egyszarvúmat?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/hu.png",
+        "language_code": "hu-HU",
+        "latitude": 47.0462552, 
+        "longitude": 19.3738617
+      },
+      {
+        "abbr": "IL",
+        "name": "Hebrew",
+        "sentence": "Mi ganav li et hachadkeren?",
+        "not_right": true,
+        "flag": "https://whostolemyunicorn.com/img/flags/48/il.png",
+        "language_code": "he-IL",
+        "latitude": 31.4670595, 
+        "longitude": 34.8146425
+      },
+      {
+        "abbr": "UA",
+        "name": "Ukrainian",
+        "sentence": "Хтось вкрав мою єдинорога?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/ua.png",
+        "language_code": "ru-RU",
+        "latitude": 49.3956617, 
+        "longitude": 30.9809839
+      },
+      {
+        "abbr": "ID",
+        "name": "Indonesian",
+        "sentence": "Siapa yang mencuri kuda bertandukku?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/id.png",
+        "language_code": "id-ID",
+        "latitude": -3.1872289, 
+        "longitude": 119.8512318
+      },
+      {
+        "abbr": "PT",
+        "name": "Portugese",
+        "sentence": "Quem roubou meu unicornio?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/pt.png",
+        "language_code": "pt-PT",
+        "latitude": 39.6584701, 
+        "longitude": -8.2444602
+      },
+      {
+        "abbr": "IE",
+        "name": "Irish",
+        "sentence": "Cé a ghoid mo unicorn?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/ie.png",
+        "latitude": 52.5188824, 
+        "longitude": -7.8599281
+      },
+      {
+        "abbr": "EE",
+        "name": "Estonian",
+        "sentence": "Kes roovis mu uksiksarve?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/ee.png",
+        "latitude": 58.6744186, 
+        "longitude": 25.3943712
+      },
+      {
+        "abbr": "NO",
+        "name": "Norwegian",
+        "sentence": "Vem stjal min enhjørning?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/no.png",
+        "language_code": "no-NO",
+        "latitude": 61.4579792, 
+        "longitude": 8.9714013
+      },
+      {
+        "abbr": "LT",
+        "name": "Lithuanian",
+        "sentence": "Kas pavoge mano vienaragi?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/lt.png",
+        "latitude": 55.3364383, 
+        "longitude": 23.8967029
+      },
+      {
+        "abbr": "IS",
+        "name": "Icelandic",
+        "sentence": "Hver stal einhyrningnum mínum?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/is.png",
+        "latitude": 64.8096369, 
+        "longitude": -18.3726328
+      },
+      {
+        "abbr": "KR",
+        "name": "Korean",
+        "sentence": "누가 내 유니콘 훔쳤 ?",
+        "phonetic": "Duga de unicorn kumchanja",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/kr.png",
+        "language_code": "ko-KR",
+        "latitude": 36.4583508, 
+        "longitude": 127.8558413
+      },
+      {
+        "abbr": "DK",
+        "name": "Danish",
+        "sentence": "Hvem stjal min enhjørning?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/dk.png",
+        "language_code": "da-DK",
+        "latitude": 55.9597945, 
+        "longitude": 10.077215
+      },
+      {
+        "abbr": "IT",
+        "name": "Italian",
+        "sentence": "Chi ha rubato íl mio unicorno?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/it.png",
+        "language_code": "it-IT",
+        "latitude": 42.7631902, 
+        "longitude": 12.2515222
+      },
+      {
+        "abbr": "GR",
+        "name": "Greek",
+        "sentence": "Pios eklepse ton monokero mu?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/gr.png",
+        "language_code": "el-GR",
+        "latitude": 39.0695071, 
+        "longitude": 22.0344557
+      },
+      {
+        "abbr": "MY",
+        "name": "Malaysian",
+        "sentence": "Siapa curi kuda bertanduk saya?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/my.png",
+        "language_code": "id-ID",
+        "latitude": 3.9886395, 
+        "longitude": 102.0640547
+      },
+      {
+        "abbr": "SZ",
+        "name": "Swazi",
+        "sentence": "Ngubani lowebe i unicorn yami?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/sz.png",
+        "latitude": -26.5647086, 
+        "longitude": 31.5014922
+      },
+      {
+        "abbr": "PL",
+        "name": "Polish",
+        "sentence": "Kto ukradł mojego jednorożca?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/pl.png",
+        "language_code": "pl-PL",
+        "latitude": 52.1295351, 
+        "longitude": 19.3944538
+      },
+      {
+        "abbr": "CN",
+        "name": "Chinese",
+        "sentence": "谁偷了我的独角兽?",
+        "phonetic": "Shui2 tou1 le wo3 de du2 jiao3 shou4",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/cn.png",
+        "language_code": "zh-CN",
+        "latitude": 34.740765, 
+        "longitude": 101.3197348
+      },
+      {
+        "abbr": "BD",
+        "name": "Bengali",
+        "sentence": "আমার উনিকর্ন কে চুরি করলো?",
+        "phonetic": "Amar unikorn ke chu ri kolo",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/bd.png",
+        "latitude": 23.7955721, 
+        "longitude": 90.2832206
+      },
+      {
+        "abbr": "TR",
+        "name": "Turkish",
+        "sentence": "Tek boynuzlu at kim Çaldı?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/tr.png",
+        "language_code": "tr-TR",
+        "latitude": 39.0614154, 
+        "longitude": 35.1245818
+      },
+      {
+        "abbr": "TH",
+        "name": "Thai",
+        "sentence": "ใครขโมยยูนิคอร์นของฉัน?",
+        "phonetic": "Khır k̄hmoy yū ni khxr̒n k̄hxng c̄hạn",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/th.png",
+        "language_code": "th-TH",
+        "latitude": 14.674475, 
+        "longitude": 101.707466
+      },
+      {
+        "abbr": "VN",
+        "name": "Vietnamese",
+        "sentence": "Ai đã ăn trộm con ngựa một sừng của tôi?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/vn.png",
+        "latitude": 13.3186546, 
+        "longitude": 108.3680998
+      },
+      {
+        "abbr": "SI",
+        "name": "Slovenian",
+        "sentence": "Kdo je ukradel mojega samoroga?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/si.png",
+        "latitude": 45.9881832, 
+        "longitude": 14.6446298
+      },
+      {
+        "abbr": "IN",
+        "name": "Hindu",
+        "sentence": "मेरा यूनिकॉर्न किसने चुराया??",
+        "phonetic": "Meda unikorn kisni churaja he?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/in.png",
+        "language_code": "hi-IN",
+        "latitude": 23.0411726, 
+        "longitude": 78.8918055
+      },
+      {
+        "abbr": "ID",
+        "name": "Balinese",
+        "sentence": "Sira sane nyambel djaran tanduk tiane?",
+        "not_right": true,
+        "flag": "https://whostolemyunicorn.com/img/flags/48/id.png",
+        "language_code": "id-ID",
+        "latitude": -3.1872289, 
+        "longitude": 119.8512318
+      },
+      {
+        "abbr": "JP",
+        "name": "Japanese",
+        "sentence": "誰がユニコーンを盗んだ?",
+        "phonetic": "Dare ga yunikoon o nusunda?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/jp.png",
+        "language_code": "ja-JP",
+        "latitude": 38.28, 
+        "longitude": 140.46
+      },
+      {
+        "abbr": "_scotland",
+        "name": "Scottish",
+        "sentence": "Whae choried ma unicoarn?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/_scotland.png",
+        "language_code": "en-EN"
+      },
+      {
+        "abbr": "_arab_league",
+        "name": "Arabic",
+        "sentence": "من سرق وحيد القرن الخاص بي؟",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/_arab_league.png",
+        "language_code": "ar-SA"
+      },
+      {
+        "abbr": "AM",
+        "name": "Armenian",
+        "sentence": "Ո՞վ է գողացել իմ միաեղջյուրը?",
+        "phonetic": "Ov e gorracel im mya yerchjura?",
+        "flag": "https://whostolemyunicorn.com/img/flags/48/am.png",
+        "latitude": 40.2935696, 
+        "longitude": 44.6297789
+      }
+       
+]

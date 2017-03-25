@@ -1,0 +1,72 @@
+PODS:
+  - ACKategories (4.0.0)
+  - ACKReactiveExtensions (2.3.0):
+    - ACKReactiveExtensions/Core (= 2.3.0)
+    - ACKReactiveExtensions/UIKit (= 2.3.0)
+    - ReactiveCocoa (~> 5.0)
+  - ACKReactiveExtensions/Argo (2.3.0):
+    - Argo (~> 4.0)
+    - ReactiveCocoa (~> 5.0)
+  - ACKReactiveExtensions/Core (2.3.0):
+    - ReactiveCocoa (~> 5.0)
+  - ACKReactiveExtensions/UIKit (2.3.0):
+    - ACKReactiveExtensions/Core
+    - ReactiveCocoa (~> 5.0)
+  - Alamofire (4.4.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - Argo (4.1.2):
+    - Runes (>= 4.0.0)
+  - Curry (3.0.0)
+  - Nimble (5.1.0)
+  - Quick (1.1.0)
+  - ReactiveCocoa (5.0.1):
+    - ReactiveSwift (~> 1.1)
+  - ReactiveSwift (1.1.0):
+    - Result (~> 3.1)
+  - Result (3.2.1)
+  - Runes (4.0.1)
+  - SnapKit (3.2.0)
+  - SwiftGen (4.2.0)
+  - Swinject (2.0.0)
+  - SwinjectAutoregistration (2.0.0):
+    - Swinject (~> 2.0.0)
+
+DEPENDENCIES:
+  - ACKategories (~> 4.0)
+  - ACKReactiveExtensions (~> 2.3)
+  - ACKReactiveExtensions/Argo (~> 2.3)
+  - Alamofire
+  - AlamofireImage
+  - Argo (~> 4.1)
+  - Curry (~> 3.0)
+  - Nimble (= 5.1)
+  - Quick (~> 1.0)
+  - ReactiveCocoa (~> 5.0)
+  - ReactiveSwift (~> 1.0)
+  - SnapKit
+  - SwiftGen (~> 4.0)
+  - Swinject (~> 2.0)
+  - SwinjectAutoregistration (~> 2.0)
+
+SPEC CHECKSUMS:
+  ACKategories: 951e12ce64b884a220d4939027954f270f54b3f5
+  ACKReactiveExtensions: 1a30f06818646f4301bb131ef4adf5d3c6d0ef8d
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  Argo: 5db06502fc1222d83011f574243089dab25202ff
+  Curry: eb3d2c75aec678b3cc7fb2729d2ad6dd121531d1
+  Nimble: 5ea121a2eda60440287054cde077fc0ad22227b3
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+  ReactiveCocoa: f577006aa6c7b0b08020109ebaae3b77ada00adc
+  ReactiveSwift: 2f4e4a02e5a5c87ea63f5fe667163ce2a67cbb57
+  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
+  Runes: ff20f163b478ac2c0e18158d6086fd5b1997f983
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftGen: b6bfed151243348e4603b91bf5bc4eb2486c9d5b
+  Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
+  SwinjectAutoregistration: 0e52cf80253af252bb5421c06950eac8460565ae
+
+PODFILE CHECKSUM: 2b869697994074dc4a07c77eede351fd7f824e56
+
+COCOAPODS: 1.2.0

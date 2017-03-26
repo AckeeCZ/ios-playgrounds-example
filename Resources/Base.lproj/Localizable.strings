@@ -1,12 +1,5 @@
-/* 
-  Localizable.strings
-  ProjectSkeleton
-
-  Created by Jakub Olejník on 15/03/2017.
-  Copyright © 2017 Ackee s.r.o. All rights reserved.
-*/
-"languageTable.network_error_title" = "Network error";
-"languageTable.network_error_message" = "Unable to download list of languages";
-"languageTable.network_error_dismiss" = "Close";
-"genericMappingError" = "There was a problem communicating with the server";
-"genericKeychainError" = "Unable to save the user";
+"welcome.title" = "Who stole my unicorn?";
+"welcome.description" = "Did your unicorn get stolen? Act quickly and allow the application to access your location";
+"welcome.enable" = "I will do anything, just get it back!";
+"welcome.skip" = "Nope, I'll risk it";
+"language_detail.play" = "Play sentence";

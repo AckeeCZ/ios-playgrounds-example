@@ -8,8 +8,8 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
-    override func loadView() {
+public class BaseViewController: UIViewController {
+    public override func loadView() {
         super.loadView()
         
         view.backgroundColor = .white

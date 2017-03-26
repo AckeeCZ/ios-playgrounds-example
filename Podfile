@@ -2,12 +2,13 @@
 source 'https://github.com/CocoaPods/Specs.git' # Default Cocoapods repo
 
 platform :ios, '9.0'
-xcodeproj 'ProjectSkeleton', 'AdHoc' => :release,'AppStore' => :release, 'Development' => :debug
+xcodeproj 'Unicorn', 'AdHoc' => :release,'AppStore' => :release, 'Development' => :debug
 
 use_frameworks!
 
-target 'ProjectSkeleton' do
-
+target 'Unicorn' do
+    
+    def pods
     # Extensions
     pod 'ACKategories', '~> 4.0'
     pod 'ACKReactiveExtensions', '~> 2.3'
@@ -28,10 +29,15 @@ target 'ProjectSkeleton' do
     
     # Dependency Injection
     pod 'Swinject', '~> 2.0'
-    pod 'SwinjectAutoregistration', '~> 2.0'
 
     # Code Generation
     pod 'SwiftGen', '~> 4.0'
+    end
+
+    target 'UnicornFramework' do
+        inherit! :search_paths
+        pods
+    end
 
     def testing_pods
         pod 'Quick', '~> 1.0'

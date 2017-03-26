@@ -29,8 +29,6 @@ PODS:
   - SnapKit (3.2.0)
   - SwiftGen (4.2.0)
   - Swinject (2.0.0)
-  - SwinjectAutoregistration (2.0.0):
-    - Swinject (~> 2.0.0)
 
 DEPENDENCIES:
   - ACKategories (~> 4.0)
@@ -47,7 +45,6 @@ DEPENDENCIES:
   - SnapKit
   - SwiftGen (~> 4.0)
   - Swinject (~> 2.0)
-  - SwinjectAutoregistration (~> 2.0)
 
 SPEC CHECKSUMS:
   ACKategories: 951e12ce64b884a220d4939027954f270f54b3f5
@@ -65,8 +62,7 @@ SPEC CHECKSUMS:
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftGen: b6bfed151243348e4603b91bf5bc4eb2486c9d5b
   Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
-  SwinjectAutoregistration: 0e52cf80253af252bb5421c06950eac8460565ae
 
-PODFILE CHECKSUM: 2b869697994074dc4a07c77eede351fd7f824e56
+PODFILE CHECKSUM: 940941cb07de65a0b8cdd790c31c23af82ec0d3a
 
 COCOAPODS: 1.2.0

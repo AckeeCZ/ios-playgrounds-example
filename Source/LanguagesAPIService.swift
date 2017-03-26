@@ -11,7 +11,7 @@ import ReactiveSwift
 import ACKReactiveExtensions
 import Argo
 
-enum APIError: Error {
+public enum APIError: Error {
     case mapping(DecodeError)
 }
 

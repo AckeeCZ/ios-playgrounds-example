@@ -10,11 +10,14 @@ import Foundation
 import Swinject
 import CoreLocation
 
-typealias LanguageDetailModelingFactory = (_ language: Language) -> LanguageDetailViewModeling
-typealias LanguageDetailTableViewControllerFactory = (_ viewModel: LanguageDetailViewModeling) -> LanguageDetailViewController
+import enum Result.NoError
+public typealias NoError = Result.NoError
+
+public typealias LanguageDetailModelingFactory = (_ language: Language) -> LanguageDetailViewModeling
+public typealias LanguageDetailTableViewControllerFactory = (_ viewModel: LanguageDetailViewModeling) -> LanguageDetailViewController
 
 
-var AppContainer: Container = {
+public var AppContainer: Container = {
     let container = Container()
     
     //API

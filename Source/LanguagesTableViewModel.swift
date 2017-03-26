@@ -10,12 +10,12 @@ import ReactiveSwift
 import CoreLocation
 
 
-enum LoadLanguagesError: Error {
+public enum LoadLanguagesError: Error {
     case api(APIError)
     case geocoding(NSError)
 }
 
-protocol LanguagesTableViewModeling {
+public protocol LanguagesTableViewModeling {
     var cellModels: MutableProperty<[LanguageDetailViewModeling]> { get }
     var loadLanguages: Action<(), [Language], LoadLanguagesError> { get }
 }

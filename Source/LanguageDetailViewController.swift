@@ -11,7 +11,7 @@ import ReactiveSwift
 import ReactiveCocoa
 import AlamofireImage
 
-class LanguageDetailViewController: BaseViewController {
+public class LanguageDetailViewController: BaseViewController {
     let viewModel: LanguageDetailViewModeling
 
     weak var titleLabel: UILabel!
@@ -34,7 +34,7 @@ class LanguageDetailViewController: BaseViewController {
         return [playAction].flatMap { $0 }
     }()
 
-    override func loadView() {
+    override public func loadView() {
         super.loadView()
 
         let titleLabel = UILabel()
@@ -75,7 +75,7 @@ class LanguageDetailViewController: BaseViewController {
         playButton.setTitleColor(UIColor.lightGray, for: .disabled)
         playButton.titleLabel?.font = UIFont.systemFont(ofSize: 17)
 
-        playButton.setTitle("► Play sentence", for: UIControlState())
+        playButton.setTitle("► " + L10n.LanguageDetail.play, for: UIControlState())
 
         view.addSubview(playButton)
         playButton.snp.makeConstraints { (make) -> Void in
@@ -97,7 +97,7 @@ class LanguageDetailViewController: BaseViewController {
 
 //    var closure:(()->())?
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         self.playButton.on(.touchUpInside) { [weak self] sender in
@@ -129,7 +129,7 @@ class LanguageDetailViewController: BaseViewController {
 
     
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

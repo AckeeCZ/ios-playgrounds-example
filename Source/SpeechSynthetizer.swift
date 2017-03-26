@@ -15,7 +15,7 @@ protocol SpeechSynthetizing {
     func speakSentence(_ sentence: String, language: String) -> SignalProducer<(), SpeakError>
 }
 
-enum SpeakError: Error {
+public enum SpeakError: Error {
     case languageUnavaible(String)
     case cancelled
 }

@@ -10,7 +10,7 @@ import Argo
 import Runes
 import Curry
 
-struct Language {
+public struct Language {
     var abbr: String
     var name: String
     var sentence: String
@@ -22,7 +22,7 @@ struct Language {
 // MARK: Decodable
 
 extension Language: Decodable {
-    static func decode(_ json: JSON) -> Decoded<Language> {
+    public static func decode(_ json: JSON) -> Decoded<Language> {
         return curry(self.init)
             <^> json <| "abbr"
             <*> json <| "name"

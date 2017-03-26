@@ -9,14 +9,13 @@
 import ReactiveSwift
 import AVFoundation
 
-protocol LanguageDetailViewModeling {
+public protocol LanguageDetailViewModeling {
     var name: MutableProperty<String> { get }
     var sentence: MutableProperty<String> { get }
     var flagURL: MutableProperty<URL> { get }
     var isSpeaking: MutableProperty<Bool> { get }
 
     var playSentence: Action<Void, (), SpeakError> {get}
-
 }
 
 class LanguageDetailViewModel: LanguageDetailViewModeling {

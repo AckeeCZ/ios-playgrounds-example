@@ -9,7 +9,7 @@
 import UIKit
 import ReactiveSwift
 
-class LanguagesTableViewController: BaseViewController {
+public class LanguagesTableViewController: BaseViewController {
 
     let viewModel: LanguagesTableViewModeling!
     let detailControllerFactory: LanguageDetailTableViewControllerFactory!
@@ -17,7 +17,7 @@ class LanguagesTableViewController: BaseViewController {
     weak var activityIndicator: UIActivityIndicatorView!
     weak var tableView: UITableView!
 
-    required init(viewModel: LanguagesTableViewModeling, detailControllerFactory: @escaping LanguageDetailTableViewControllerFactory) {
+    required public init(viewModel: LanguagesTableViewModeling, detailControllerFactory: @escaping LanguageDetailTableViewControllerFactory) {
         self.viewModel = viewModel
         self.detailControllerFactory = detailControllerFactory
         super.init(nibName: nil, bundle: nil)
@@ -30,7 +30,7 @@ class LanguagesTableViewController: BaseViewController {
         tableView.reactive.isHidden <~ viewModel.loadLanguages.isExecuting
     }
 
-    override func loadView() {
+    override public func loadView() {
         super.loadView()
 
         let tableView = UITableView()
@@ -56,7 +56,7 @@ class LanguagesTableViewController: BaseViewController {
 
     var previewingContext: UIViewControllerPreviewing!
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         self.setupBindings()
         self.tableView.rowHeight = UITableViewAutomaticDimension
@@ -69,13 +69,13 @@ class LanguagesTableViewController: BaseViewController {
         }
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         if let selected = self.tableView.indexPathForSelectedRow {
             self.tableView.deselectRow(at: selected, animated: false)
         }
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
@@ -88,11 +88,11 @@ class LanguagesTableViewController: BaseViewController {
 
 // MARK: UITableViewDataSource
 extension LanguagesTableViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.cellModels.value.count
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: LanguageTableViewCell = tableView.dequeueReusableCell(withIdentifier: "languageCell", for: indexPath) as! LanguageTableViewCell
         cell.viewModel.value = viewModel.cellModels.value[indexPath.row]
 
@@ -102,7 +102,7 @@ extension LanguagesTableViewController: UITableViewDataSource {
 
 // MARK: UITableViewDelegate
 extension LanguagesTableViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let controller = detailViewControllerForIndexPath(indexPath)
         navigationController?.pushViewController(controller, animated: true)
     }
@@ -110,13 +110,13 @@ extension LanguagesTableViewController: UITableViewDelegate {
 //MARK : UIViewControllerPreviewingDelegate
 extension LanguagesTableViewController: UIViewControllerPreviewingDelegate {
 
-    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+    public func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
         guard let indexPath = tableView.indexPathForRow(at: location) else { return nil }
 
         return detailViewControllerForIndexPath(indexPath)
     }
 
-    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+    public func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
         show(viewControllerToCommit, sender: self)
     }
 }

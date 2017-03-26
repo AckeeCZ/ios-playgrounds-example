@@ -37,7 +37,7 @@ class LanguageTableViewCell: UITableViewCell {
         self.contentView.addSubview(nameLabel)
 
         nameLabel.snp.makeConstraints { (make) -> Void in
-            make.leading.equalTo(flagImageView.snp.trailing).offset(12)
+            make.leading.equalTo(flagImageView.snp.trailing).offset(20)
             make.centerY.equalTo(flagImageView)
             make.trailing.equalTo(-15)
         }

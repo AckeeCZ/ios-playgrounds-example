@@ -7,14 +7,11 @@
 //
 
 import UIKit
-import ReactiveSwift
+import UnicornFramework
 import Swinject
 
-import ACKReactiveExtensions
-import ACKategories
-
-import enum Result.NoError
-public typealias NoError = Result.NoError
+//import ACKReactiveExtensions
+//import ACKategories
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -24,9 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // Start location manager
-        let locationManager = AppContainer.resolve(LocationManager.self)!
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
+//        let locationManager = AppContainer.resolve(LocationManager.self)!
+//        locationManager.requestWhenInUseAuthorization()
+//        locationManager.startUpdatingLocation()
 
         // Resolve initial controller with all its dependencies
         let controller = AppContainer.resolve(LanguagesTableViewController.self)!

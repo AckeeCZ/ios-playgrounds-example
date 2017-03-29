@@ -9,27 +9,9 @@
 import UIKit
 import ACKategories
 
-extension UIFont {
-    fileprivate static let defaultSize: CGFloat = 13
-    
-    enum FontStyle: String {
-        case regular = "Helvetica"
-
-        func font(with size: CGFloat = UIFont.defaultSize) -> UIFont {
-            return UIFont(name: rawValue, size: size)!
-        }
-    }
-}
-
 extension UIColor {
-    static var gay: UIColor { return UIColor(hex: 0xFF1493) }
-    static var defaultText: UIColor { return .black }
+    static var unicornBlue: UIColor { return #colorLiteral(red: 0.003921568627, green: 0.231372549, blue: 0.4078431373, alpha: 1) }
+    static var unicornGray: UIColor { return #colorLiteral(red: 0.6642242074, green: 0.6642400622, blue: 0.6642315388, alpha: 1) }
+    static var unicornLightGray: UIColor { return #colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1) }
 }
 
-extension UILabel {
-    func makeDefault(style: UIFont.FontStyle = .regular, size: CGFloat = UIFont.defaultSize, color: UIColor? = nil) {
-        font = style.font(with: size)
-        
-        if let color = color { textColor = color }
-    }
-}

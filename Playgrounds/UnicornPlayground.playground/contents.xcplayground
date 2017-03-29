@@ -4,5 +4,6 @@
         <page name='LanguagesList'/>
         <page name='LanguageDetail'/>
         <page name='Welcome'/>
+        <page name='LanguagesListEmpty'/>
     </pages>
 </playground>

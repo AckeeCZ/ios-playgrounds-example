@@ -1,5 +1,4 @@
 import UIKit
-@testable import UnicornFramework
 // swiftlint:disable function_body_length
 
 public enum Device {
@@ -19,7 +18,6 @@ public enum Orientation {
 
  - parameter device:           The device the controller should represent.
  - parameter orientation:      The orientation of the device.
- - parameter language:      The language of the device.
  - parameter child:            An optional controller to put inside the parent controller. If omitted
  a blank controller will be used.
  - parameter additionalTraits: An optional set of traits that will also be applied. Traits in this collection
@@ -57,82 +55,80 @@ public class PlaygroundController: UIViewController {
     }
     
     func setupChild(){
-        L10n.language = self.language
-        let parent = self
         let child = childFactory()
         
-        parent.addChildViewController(child)
-        parent.view.addSubview(child.view)
+        self.addChildViewController(child)
+        self.view.addSubview(child.view)
 
         child.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         let traits: UITraitCollection
         switch (device, orientation) {
         case (.phone4inch, .portrait):
-            parent.view.frame = .init(x: 0, y: 0, width: 320, height: 575)
+            self.view.frame = .init(x: 0, y: 0, width: 320, height: 575)
             traits = .init(traitsFrom: [
                 .init(horizontalSizeClass: .compact),
                 .init(verticalSizeClass: .regular),
                 .init(userInterfaceIdiom: .phone)
                 ])
         case (.phone4inch, .landscape):
-            parent.view.frame = .init(x: 0, y: 0, width: 575, height: 320)
+            self.view.frame = .init(x: 0, y: 0, width: 575, height: 320)
             traits = .init(traitsFrom: [
                 .init(horizontalSizeClass: .compact),
                 .init(verticalSizeClass: .compact),
                 .init(userInterfaceIdiom: .phone)
                 ])
         case (.phone4_7inch, .portrait):
-            parent.view.frame = .init(x: 0, y: 0, width: 375, height: 667)
+            self.view.frame = .init(x: 0, y: 0, width: 375, height: 667)
             traits = .init(traitsFrom: [
                 .init(horizontalSizeClass: .compact),
                 .init(verticalSizeClass: .regular),
                 .init(userInterfaceIdiom: .phone)
                 ])
         case (.phone4_7inch, .landscape):
-            parent.view.frame = .init(x: 0, y: 0, width: 667, height: 375)
+            self.view.frame = .init(x: 0, y: 0, width: 667, height: 375)
             traits = .init(traitsFrom: [
                 .init(horizontalSizeClass: .compact),
                 .init(verticalSizeClass: .compact),
                 .init(userInterfaceIdiom: .phone)
                 ])
         case (.phone5_5inch, .portrait):
-            parent.view.frame = .init(x: 0, y: 0, width: 414, height: 736)
+            self.view.frame = .init(x: 0, y: 0, width: 414, height: 736)
             traits = .init(traitsFrom: [
                 .init(horizontalSizeClass: .compact),
                 .init(verticalSizeClass: .regular),
                 .init(userInterfaceIdiom: .phone)
                 ])
         case (.phone5_5inch, .landscape):
-            parent.view.frame = .init(x: 0, y: 0, width: 736, height: 414)
+            self.view.frame = .init(x: 0, y: 0, width: 736, height: 414)
             traits = .init(traitsFrom: [
                 .init(horizontalSizeClass: .regular),
                 .init(verticalSizeClass: .compact),
                 .init(userInterfaceIdiom: .phone)
                 ])
         case (.pad, .portrait):
-            parent.view.frame = .init(x: 0, y: 0, width: 768, height: 1024)
+            self.view.frame = .init(x: 0, y: 0, width: 768, height: 1024)
             traits = .init(traitsFrom: [
                 .init(horizontalSizeClass: .regular),
                 .init(verticalSizeClass: .regular),
                 .init(userInterfaceIdiom: .pad)
                 ])
         case (.pad, .landscape):
-            parent.view.frame = .init(x: 0, y: 0, width: 1024, height: 768)
+            self.view.frame = .init(x: 0, y: 0, width: 1024, height: 768)
             traits = .init(traitsFrom: [
                 .init(horizontalSizeClass: .regular),
                 .init(verticalSizeClass: .regular),
                 .init(userInterfaceIdiom: .pad)
                 ])
         }
-        parent.view.frame = scale(rect: parent.view.frame, by: scaleFactor)
+        self.view.frame = scale(rect: self.view.frame, by: scaleFactor)
         child.view.transform = CGAffineTransform(scaleX: scaleFactor, y: scaleFactor)
         
-        parent.preferredContentSize = parent.view.frame.size
-        child.view.frame = parent.view.frame
+        self.preferredContentSize = self.view.frame.size
+        child.view.frame = self.view.frame
         
         let allTraits = UITraitCollection.init(traitsFrom: [traits, additionalTraits])
-        parent.setOverrideTraitCollection(allTraits, forChildViewController: child)
+        self.setOverrideTraitCollection(allTraits, forChildViewController: child)
     }
     
     func scale(rect: CGRect, by scale: CGFloat) -> CGRect {

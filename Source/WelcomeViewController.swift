@@ -42,7 +42,7 @@ class WelcomeViewController: UIViewController {
         descriptionLabel.textAlignment = .center
         descriptionLabel.numberOfLines = 0
         descriptionLabel.text = L10n.Welcome.description
-        descriptionLabel.font = UIFont.systemFont(ofSize: 17)
+        descriptionLabel.font = UIFont.systemFont(ofSize: 20)
         view.addSubview(descriptionLabel)
         descriptionLabel.snp.makeConstraints { (make) in
             make.top.equalTo(titleLabel.snp.bottom).offset(20)
@@ -50,7 +50,7 @@ class WelcomeViewController: UIViewController {
         }
         
         let enableButton = UIButton()
-        enableButton.setBackgroundImage(#colorLiteral(red: 0.003921568627, green: 0.231372549, blue: 0.4078431373, alpha: 1).image(), for: .normal)
+        enableButton.setBackgroundImage(UIColor.unicornBlue.image(), for: .normal)
         enableButton.clipsToBounds = true
         enableButton.setTitleColor(.white, for: .normal)
         enableButton.setTitle(L10n.Welcome.enable, for: .normal)
@@ -63,8 +63,8 @@ class WelcomeViewController: UIViewController {
         }
         
         let skipButton = UIButton()
-        skipButton.setTitleColor(#colorLiteral(red: 0.6642242074, green: 0.6642400622, blue: 0.6642315388, alpha: 1), for: .normal)
-        skipButton.setTitleColor(#colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1), for: .highlighted)
+        skipButton.setTitleColor(.unicornLightGray, for: .normal)
+        skipButton.setTitleColor(.unicornGray, for: .highlighted)
         skipButton.setTitle(L10n.Welcome.skip, for: .normal)
         view.addSubview(skipButton)
         skipButton.snp.makeConstraints { (make) in

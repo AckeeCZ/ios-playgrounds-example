@@ -9,7 +9,7 @@ import PlaygroundSupport
 
 let parent = PlaygroundController(device: .phone4inch, orientation: .portrait){
     
-    let language = Language(abbr: "de", name: "German", sentence: "Rechtsschutzversicherungsgesellschaften kaftfahrzeug-Haftpflichtversicherung donaudampfschiffahrtsgesellschaftskapitän", flag: "https://whostolemyunicorn.com/img/flags/48/de.png", not_right: false, language_code: "de-DE")
+    let language = Language(abbr: "fi", name: "Finnish", sentence: "Kuka varasti yksisarvisenni?", flag: "https://whostolemyunicorn.com/img/flags/48/fi.png", not_right: false, language_code: "fi-FI")
     
     let vm = AppContainer.resolve(LanguageDetailViewModeling.self, argument: language)!
     return AppContainer.resolve(LanguageDetailViewController.self, argument: vm)!

@@ -13,6 +13,7 @@
 
 // swiftlint:disable type_body_length
 enum Asset: String {
+  case sad = "Sad"
   case unicorn = "Unicorn"
 
   var image: Image {
